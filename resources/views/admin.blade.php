@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    ¡Te has logueado como Usuario!
+                    ¡Te has logueado como Administrador!
                 </div>
             </div>
         </div>

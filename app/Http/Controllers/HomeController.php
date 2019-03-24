@@ -21,10 +21,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(Request $request)
+    public function home(Request $request)
     {
         $request->user()->authorizeRoles(['admin', 'user']);
         return view('home');
+    }
+
+    public function admin(Request $request)
+    {
+        $request->user()->authorizeRoles('admin');
+        return view('admin');
     }
     
     /*

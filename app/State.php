@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Role extends Model
+class State extends Model
 {
-    public function users()
+    public function countrys()
     {
         return $this
-            ->belongsToMany('App\User')
+            ->belongsToMany('App\Country')
             ->withTimestamps();
     }
 }
