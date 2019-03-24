@@ -30,7 +30,7 @@ class HomeController extends Controller
     public function admin(Request $request)
     {
         $request->user()->authorizeRoles('admin');
-        return view('admin');
+        return view('dashboard');
     }
     
     /*
